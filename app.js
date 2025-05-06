@@ -44,4 +44,6 @@ app.post('/create', async (req, res) => {
     res.redirect('/read');
 });
 
-app.listen(3000);
+app.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}`);
+});
